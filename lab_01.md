@@ -42,7 +42,7 @@ https://www.quora.com/Why-is-Python-a-language-of-choice-for-data-scientists 
 
 Jak zostało już wspomniane w punkcie 1 zmiany w specyfikacji języka odbywają się poprzez system PEP. Dokument o numerze PEP8 jest jedną (ale nie jedyną) propozycją organizacji kodu języka Python. Oryginalna treść dokumentu dostępna jest pod adresem https://www.python.org/dev/peps/pep-0008/.
 
-**### 4.1. Wcięcia**
+### **4.1. Wcięcia**
 
 W kodzie języka Python nie znajdziemy znanych z PHP, Javy czy C# klamerek do separacji bloków kodu, określania ram ciała metody czy klasy lub zakresu operacji w pętli. Tutaj do tego celu służą odpowiednio ustawione **wcięcia i puste linie** między w/w elementami. Dla osób, które nigdy wcześniej nie miały do czynienia z taką organizacją kodu może to być zaskakujące, ale dość szybko staje się zrozumiałe i intuicyjne.
 
@@ -91,7 +91,7 @@ zysk = (przychod
         - podatki)
 ```
 
-**### 4.2. Puste linie**
+### **4.2. Puste linie**
 
 Funkcje najwyższego rzędu oraz definicje klas oddzielamy od pozostałych bloków kodu dwiema pustymi liniami.
 
