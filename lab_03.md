@@ -123,7 +123,7 @@ Za pomocą rzutowania stringa na listę zapisz do listy swoje imię i nazwisko m
 **Zadanie 4**  
 Napisz skrypt, gdzie w jednej zmiennej zapiszesz dowolnie długie zdanie (co najmniej 5 wyrazów) a następnie podziel te zdanie na wyrazy tak by zostały zapisane w liście jako jej elementy.
 
-### **1.5 Słowniki (ang. dictionary**
+### **1.5 Słowniki (ang. dictionary)**
 
 
 Słowniki to tablica mieszająca lub inaczej tablica z haszowaniem, którą można porównać do tablic asocjacyjnych znanych z innych języków programowania. Słowniki przechowują pary **klucz: wartość** i właśnie po kluczu odbywa się dostęp do elementu. 
@@ -132,10 +132,8 @@ Do wersji 3.6 języka Python słowniki nie gwarantowały porządku elementów zg
 
 Kluczem w słowniku może być każdy niezmienny typ (niemutowalny, ang. immutable type) danych np., string lub liczba. Kluczem może być również krotka (jeden z typów danych języka Python), jeżeli zawiera typy niezmienne (string, liczba, krotka). 
 
-Klucze w słowniku są unikalne a pary elementów nie są uporządkowane w kolejności, w której zostały dodane. Słownik został już wykorzystany we wcześniejszych przykładach w podrozdziale z formatowaniem ciągów tekstowych.
-
 Poniżej fragmenty kodu tworzące słownik oraz pokazujące jak uzyskać dostęp do jego danych.
- 
+
 **Listing 6**
 ```python
 # tworzenie słownika
@@ -167,7 +165,7 @@ print(slownik.keys())
 
 > **Zadania**
 
-**Zadanie 1**
+**Zadanie 1**  
 Stwórz słownik gdzie kluczami będą numery miesięcy (rozpoczynając od 1) a wartościami nazwy polskich miesięcy.
 
 **Zadanie 2**  
@@ -175,6 +173,7 @@ Stwórz podobny słownik jak w zadaniu 1, ale z angielskimi nazwami miesięcy. P
 
 **Zadanie 3**  
 Wykorzystując ciąg tekstowy 'Marianna' oraz metodę **fromkeys()** dla słowników stwórz słownik, który będzie zawierał jako klucze unikalne litery w/w imienia a jako wartość każdy klucz będzie miał przypisaną wartość 1.
+Poprawne wyjście: `{'M': 1, 'a': 1, 'r': 1, 'i': 1, 'n': 1}`
 
 
 ### **1.6 Krotki**
@@ -258,7 +257,7 @@ print(czar ^ inny_czar) # różnica symetryczna
 Bardzo przydatna staje się własność unikalnych elementów zbioru jeżeli chcemy wyeliminować duplikaty z listy, gdyż wystarczy rzutować listę na zbiór. Rzutowanie to konwersja jednego typu danych na inny. Nie zawsze jest ona możliwa. Następnie, jeżeli na wyjściu potrzebujemy znowu listy to rzutujemy w odwrotną stronę.
 
 
-### **1.8 Funkcja range
+### **1.8 Funkcja range**
 
 Funkcja (chociaż nazywając precyzyjniej to niezmienna sekwencja) range służy do generowania ciągu liczb według zadanych parametrów. Często przydaje się w pętlach lub podczas tworzenia list lub zbiorów liczb. 
 Funkcja range() i sposób jej użycia zmieniał się w trakcie rozwoju języka i jej zastosowanie w wersji Python 2.x różni się od tego co będzie zaprezentowane tutaj. Zapoznanie się ze szczegółami dotyczącymi tych różnic pozostawiam czytelnikowi.
