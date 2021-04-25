@@ -16,50 +16,78 @@ Zanim omówione zostaną typy danych warto poznać kilka operatorów, które w p
 **Listing 1**
 ```python
 # operatory arytmetyczne
+
+# operator dodawania
+print(1 + 2)
+# operator odejmowania
+print(1 - 2)
+# operator mnożenia
+print(1 * 2)
+# operator dzielenia z resztą
+print(1 / 2)
+# operator dzielenia bez reszty (dzielenie całkowite)
+print(1 // 2)
+
+# pamiętajmy o kolejności operacji arytmetycznych
 suma = 1 + 2 * 3 / 4.0
-# dzielenie całkowite
-wynik = 3 // 2 
+
+# operatory przypisania
+zmienna = "wartość" # przypisanie wartości do zmiennej
+# są też skrócone postacie operatorów przypisania w połączeniu z innymi operatorami
+suma = 10
+suma += 1 
+# to samo co
+suma = suma + 1
+# podobnie możemy uzywać operatorów -, *, /, //, **, % i operatorów bitowych (zachęcam do poczytania w dokumentacji)
+
 
 # modulo czyli reszta z dzielenia
 reszta = 12 % 5
-
+# operator potęgowania
 kwadrat = 5 ** 2
 szescian = 5 ** 3
 
-# operacje na łańcuchac znakowych
-full_name = 'Jan' + ' ' + 'Kowalski'
-# ale to ?
-spam = 'SPAM ' * 10
+# operacje na zmiennych znakowych (string)
+full_name = "Krzysztof" + " " + "Ropiak"
+
+# tak też można
+spam = "SPAM " * 10
 print(spam)
 
-# listy
-oceny = [1, 2, 3, 4, 5] * 10
-print(oceny)
 
 # operatory porównania
 liczba1 = 1
 liczba2 = 2
-
 print(liczba1 > liczba2)
+print(liczba1 < liczba2)
 print(liczba1 <= liczba2)
+print(liczba1 >= liczba2)
 print(liczba1 == liczba2)
 print(liczba1 != liczba2)
 
-# powyższe porównania zwrócą wartości logiczne czyli True lub False
-# poniżej przykład użycia operatorów logicznych
+# powyższe porównania zwrócą wartości typu bool czyli True lub False
 
 prawda = True
 falsz = False
 
-print(prawda and falsz)
-print(prawda or falsz)
-print(not prawda)
-print(not not prawda)
-print(bool(prawda or falsz))
+# operatory logiczne
+print(prawda and falsz) # koniunkcja logiczna
+print(prawda or falsz) # alternatywa logiczba
+print(not prawda) # negacja
+print(not not prawda) # podwójna negacja
+print(bool(prawda or falsz)) # użycie metody bool(), która jest tutaj wywołaniem konstruktora klasy bool (więcej w kolejnych labach)
 
-# operator zawierania się
-lista = [1, 2, 3, 4, 5]
-print(5 in lista)
+# operatory tożsamości (identity)
+liczba = 1
+liczba2 = liczba
+
+print(liczba is liczba2)
+print(liczba is not liczba2)
+
+# operatory przynależności (membership)
+lista = [1, 2, 3, 4]
+print(1 in lista)
+print(5 not in lista)
 ```
 
 Python w bardziej złożonych wyrażeniach wykonuje działania w określonej kolejności:
