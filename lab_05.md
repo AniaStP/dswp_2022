@@ -94,7 +94,7 @@ C={x: x&isin; B i x jest liczbą podzielną przez 4}
 
 **Zadanie 2**
 
-Wygeneruj losowo (sprawdź pakiet **random**) macierz (lista dwupoziomowa) 4x4 i wykorzystując Python Comprehension zdefiniuj listę, która będzie zawierała tylko elementy znajdujące się na przekątnej.
+Wygeneruj losowo (sprawdź pakiet **[random](https://docs.python.org/3.8/library/random.html)** macierz (lista dwupoziomowa) 4x4 i wykorzystując Python Comprehension zdefiniuj listę, która będzie zawierała tylko elementy znajdujące się na przekątnej.
 
 **Zadanie 3**
 
