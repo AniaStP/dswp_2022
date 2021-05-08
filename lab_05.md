@@ -288,10 +288,11 @@ __all__ = ['matma', 'jingle']
 
 Aby sprawdzić sposób działania poniższych listingów przedstawię najpierw strukturę katalogów i plików, które zostały wykorzystane w poniższych przykładach.
 
-![moduły](modules.jpg)
+![moduły](images/modules.jpg)
 
 Reasumując, został utworzony folder `mojpakiet` a w nim znajduje się plik `matma.py` przedstawiony na listingu w tym rozdziale.
-Zawartość pliku jingle.py:
+
+Zawartość pliku `jingle.py`:
 
 **Listing 12**
 ```python
@@ -332,6 +333,6 @@ Podsumowując, zalecanym sposobem wykonywania importów jest
 `import moduł`.
 Jako ciekawostkę polecam umieszczenie polecenia `import this` w swoim pliku lub wykonanie w konsoli.
 
-**Zadanie 9***
+**Zadanie 9**
 
 Stwórz moduł o nazwie `dni_tygodnia.py` i umieść w nim co najmniej dwie funkcje zwracające polskie nazwy dni tygodnia w zależności od przekazanego parametru. Propozycje: funkcja zwracająca dzień tygodnia dla dowolnej daty przekazanej jako argument, dzień tygodnia na podstawie numeru dnia tygodnia, funkcja zwracająca skrócone nazwy dni tygodnia, funkcja zwracająca słownik par gdzie klucz to dzień miesiąca  a wartość to polska nazwa dnia tygodnia dla danego miesiąca przekazanego jako argument funkcji (rok, miesiąc zapewne).

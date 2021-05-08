@@ -7,6 +7,7 @@
 Język Python posiada tylko jedną wbudowaną instrukcję warunkową i jest nią instrukcja if/elif/else. Nie znajdziemy tutaj konstrukcji case/switch.
 
 Oto najprostsza postać tej instrukcji:
+
 **Listing 1**
 ```python
 liczba1 = 1
@@ -31,7 +32,7 @@ else:
 
 ```
 
-Aby budować bardziej złożone warunki używamy operatorów boolowskich, które zostały przedstawione w podrozdziale Kilka słów o operatorach.
+Aby budować bardziej złożone warunki używamy operatorów boolowskich, które zostały przedstawione w podrozdziale pt. 'Kilka słów o operatorach'.
 
 **Listing 3**
 ```python
@@ -44,7 +45,7 @@ if liczba not in zbior_dopuszczalny:
     print('Podana liczba nie znajduje się w zbiorze')
 ```
 
-Jak zostało już wspomniane wcześniej Python posiada typ None, który odpowiada Null znanemu z innych języków oraz baz danych. Ponownie odsyłam do podrozdziału Kilka słów o operatorach  gdzie znajduje się informacja co jest traktowane jako Null w Pythonie.
+Jak zostało już wspomniane wcześniej Python posiada typ **None**, który jest tym samym co typ **Null** w wielu innych językach programowania oraz bazach danych. Ponownie odsyłam do podrozdziału *Kilka słów o operatorach*  gdzie znajduje się informacja co jest traktowane jako `None` w Pythonie.
 
 **listing 4**
 ```python
@@ -87,7 +88,7 @@ if pusty_ciag == '':
 ```
  
 Instrukcję if można również znaleźć w wielu skryptach Pythona sprawdzającą dość tajemniczą własność if __name__ == ‘__main__’. Poniżej wyjaśnienie stosownym przykładem.
- 
+
 **Listing 5**
 ```python
 # Jest również specjalne zastosowanie instrukcji if
@@ -107,7 +108,7 @@ print(__name__)
 
 ### **2.2 Pętla for oraz while**
 
-W Pythonie mamy do dyspozycji dwie pętle: for oraz while przy czym ta pierwsza jest zdecydowanie bardziej „popularna” wśród programistów Pythona. Przykład zastosowania pętli for znalazł się już w podrozdziale 1.8 gdzie opisywana była funkcja range. Dla przypomnienia w poniższych przykładach również pojawi się jej zastosowanie.
+W Pythonie mamy do dyspozycji dwie pętle: for oraz while przy czym ta pierwsza jest zdecydowanie bardziej „popularna” wśród programistów Pythona. Przykład zastosowania pętli `for` znalazł się już w podrozdziale 1.8 gdzie opisywana była funkcja range. Dla przypomnienia w poniższych przykładach również pojawi się jej zastosowanie.
 
 **Listing 6**
 ```python
@@ -182,7 +183,7 @@ while True:
 print('Twoja lista -> ' + repr(lista))
 ```
 
-W tym miejscu należy wspomnieć o instrukcji break oraz continue, które możemy umieszczać wewnątrz pętli. Break powoduje zakończenie pętli (tylko tej, w bloku której znalazła się instrukcja) natomiast continue kończy przebieg aktualnej iteracji pętli (czyli to co jest za continue się nie wykona) i rozpoczyna kolejną iterację.
+W tym miejscu należy wspomnieć o instrukcji `break` oraz `continue`, które możemy umieszczać wewnątrz pętli. `Break` powoduje zakończenie pętli (tylko tej, w bloku której znalazła się instrukcja) natomiast `continue` kończy przebieg aktualnej iteracji pętli (czyli to co jest za `continue` się nie wykona) i rozpoczyna kolejną iterację.
 
 ### **2.3 Wprowadzanie danych ze standardowego wejścia**
 
@@ -206,10 +207,10 @@ sys.stdout.write(s)
 > Zadania
 
 **Zadanie 1**   
-Napisz skrypt, który pobiera od użytkownika zdanie i liczy w nim spacje. Wynik wyświetla na ekranie (użyj instrukcji input)
+Napisz skrypt, który pobiera od użytkownika zdanie i liczy w nim spacje. Wynik wyświetla na ekranie (użyj instrukcji input).
 
 **Zadanie 2**  
-Napisz skrypt, który pobiera od użytkownika dwie wartości i mnoży je przez siebie. Wynik wyświetla na ekranie (użyj instrukcji readline() i write()).
+Napisz skrypt, który pobiera od użytkownika dwie wartości i mnoży je przez siebie. Wynik wyświetla na ekranie (użyj instrukcji `readline(`)` i `write()`).
 
 **Zadanie 3**  
 Napisz skrypt, który pobiera od użytkownika trzy liczby a, b i c. Sprawdza następujące warunki:
