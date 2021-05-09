@@ -190,11 +190,6 @@ Napisz funkcję, która przyjmuje jeden argument pozycyjny, o domyślnej wartoś
 333
 ```
 
-**Zadanie 6**
-
-Zdefiniuj funkcję, która zwraca sumę dowolnego ciągu arytmetycznego.
-Funkcja niech przyjmuje jako parametry: a1 (wartość początkowa), r (wielkość o ile rosną kolejne elementy) i ile_elementów (ile elementów ma sumować). Ponadto funkcja niech przyjmuje wartości domyślne: a1 = 1, r = 1, ile = 10.
-
 **Listing 8**
 ```python
 # symbol * oznacza dowolną ilość argumentów przechowywanych w krotce
@@ -215,7 +210,7 @@ print(ciag())
 # podajemy argumenty
 print(ciag(1,2,3,4,5,6,7,8))
 ```
-**Zadanie 7**
+**Zadanie 6**
 
 Wykorzystując poprzedni przykład zdefiniuj funkcję, która będzie liczyć iloczyn elementów ciągu.
 
@@ -231,7 +226,7 @@ def to_lubie(** rzeczy):
 
 to_lubie(slodycze="czekolada", rozrywka=["disco-polo", "moda na sukces"])
 ```
-**Zadanie 8**
+**Zadanie 7**
 
 Napisz funkcję, która wykorzystuje symbol **. Funkcja ma przyjmować listę zakupów w postaci: klucz to nazwa produktu a wartość to ilość. Funkcja ma zliczyć ile jest wszystkich produktów w ogóle i zwracać tę wartość.
 
@@ -333,6 +328,6 @@ Podsumowując, zalecanym sposobem wykonywania importów jest
 `import moduł`.
 Jako ciekawostkę polecam umieszczenie polecenia `import this` w swoim pliku lub wykonanie w konsoli.
 
-**Zadanie 9**
+**Zadanie 8** *
 
 Stwórz moduł o nazwie `dni_tygodnia.py` i umieść w nim co najmniej dwie funkcje zwracające polskie nazwy dni tygodnia w zależności od przekazanego parametru. Propozycje: funkcja zwracająca dzień tygodnia dla dowolnej daty przekazanej jako argument, dzień tygodnia na podstawie numeru dnia tygodnia, funkcja zwracająca skrócone nazwy dni tygodnia, funkcja zwracająca słownik par gdzie klucz to dzień miesiąca  a wartość to polska nazwa dnia tygodnia dla danego miesiąca przekazanego jako argument funkcji (rok, miesiąc zapewne).
