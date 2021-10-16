@@ -7,6 +7,7 @@
 
 Lista w języku Python to kolekcja, którą można porównać do tablic w innych językach programowania. Ważną cechą list jest to, że mogą przechowywać różne typy danych. Rozmiar tablicy ograniczony jest możliwościami sprzętu.
 Listę możemy zainicjalizować w poniższy sposób:
+
 **Listing 1**
 
 ```python
@@ -32,6 +33,7 @@ print(lista)
 ```
 
 W Pythonie można też w łatwy sposób łączyć ze sobą listy:
+
 **Listing 3**
 ```python
 # wstawianie i usuwanie elementów listy
@@ -51,8 +53,7 @@ print(lista6)
 
 Obie metody różnią się od siebie tym, że pierwsza modyfikuje już istniejącą listę, a druga wymaga podstawienia połączonej listy pod zmienną gdyż sama arytmetyczna operacja „+” nie spowoduje zmiany pierwotnej listy.
 
-Niektóre metody, które można wykonać na obiekcie listy wykonują się jako operacje in-place co oznacza, że operacja wykonywana jest bez zwracania nowej wartości przez co nie można zmienionej tablicy przypisać do innej zmiennej.
-Poniżej przykład z sortowaniem.
+Niektóre metody, które można wykonać na obiekcie listy wykonują się jako operacje **in-place** co oznacza, że operacja wykonywana jest bez zwracania nowej wartości  (co przy próbie przypisania wartości zwracanej przypisze zmienną **NoneType**) przez co nie można zmienionej tablicy przypisać do nowej zmiennej pozostawiając oryginał bez zmian. Poniżej przykład z sortowaniem.
 
 **Listing 4**
 ```python
@@ -67,9 +68,9 @@ print(posortowana)
 # None
 ```
 
-Wartość **None** w Pythonie odpowiada wartości **Null** w innych językach programowania i oznacza **nic**, specjalny typ danych. Nie możemy też posortować tablicy, w której znajdują się liczby oraz ciągi tekstowe.
+Wartość **None** (typ **NoneType**) w Pythonie odpowiada wartości **Null** w innych językach programowania i oznacza **nic**, specjalny typ danych. Nie możemy też posortować tablicy, w której znajdują się niejednorodne wartości np. liczby oraz ciągi tekstowe.
 
-Listy mogą być „cięte” (ang. sliced) tak jak ciągi tekstowe przedstawione w poprzednim rozdziale.
+Listy mogą być „cięte” (ang. **sliced**) tak jak ciągi tekstowe przedstawione w poprzednim rozdziale.
 Dodawanie, usuwanie i zmiana wartości elementów listy może być wykonywana na wiele sposobów. Poniżej listing z niektórymi z nich.
 
 **Listing 5**
@@ -126,9 +127,9 @@ Napisz skrypt, gdzie w jednej zmiennej zapiszesz dowolnie długie zdanie (co naj
 ### **1.5 Słowniki (ang. dictionary)**
 
 
-Słowniki to tablica mieszająca lub inaczej tablica z haszowaniem, którą można porównać do tablic asocjacyjnych znanych z innych języków programowania. Słowniki przechowują pary **klucz: wartość** i właśnie po kluczu odbywa się dostęp do elementu. 
+Słownik to tablica mieszająca lub inaczej tablica z haszowaniem, którą można porównać do tablic asocjacyjnych znanych z innych języków programowania. Słowniki przechowują pary **klucz: wartość** i właśnie po kluczu odbywa się dostęp do elementu. 
 
-Do wersji 3.6 języka Python słowniki nie gwarantowały porządku elementów zgodnie z kolejnością ich dodawania. Od wspomnianej wersji słowniki są uporządkowane.
+**Do wersji 3.6 języka Python słowniki nie gwarantowały porządku elementów zgodnie z kolejnością ich dodawania. Od wspomnianej wersji słowniki są uporządkowane zgodnie z kolejnością dodawania elementów.**
 
 Kluczem w słowniku może być każdy niezmienny typ (niemutowalny, ang. immutable type) danych np., string lub liczba. Kluczem może być również krotka (jeden z typów danych języka Python), jeżeli zawiera typy niezmienne (string, liczba, krotka). 
 

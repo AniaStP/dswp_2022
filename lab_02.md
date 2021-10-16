@@ -2,9 +2,10 @@
 
 ## **1. Podstawowe typy danych**
 
-Zanim przejdziemy do omawiania poszczególnych typów danych warto wiedzieć, że Python jest językiem „typowanym dynamicznie”. Oznacza to, że typ danych jaki zostanie wykorzystany do przechowania wartości przypisanej do zmiennej często zależy od wartości jaka zostanie do zmiennej przypisana co znacznie różni się od sposobu w jaki typy są przypisywane do zmiennych w językach takich jak Java czy C++. 
+Zanim przejdziemy do omawiania poszczególnych typów danych warto wiedzieć, że Python jest językiem „typowanym dynamicznie”. Oznacza to, że typ danych jaki zostanie wykorzystany do przechowania wartości przypisanej do zmiennej jest ustalony w momencie jej przypisania (operator '=') co znacznie różni się od sposobu w jaki typy są przypisywane do zmiennych w językach takich jak Java czy C++, gdzie w kodzie źródłowym określamy jaki typ danych (typ obiektu) będzie owa zmienna przechowywała.
 
-Takie rozwiązanie ma zarówno wady jak i zalety. Do wad można zaliczyć to, że pierwotny typ zmiennej może ulec zmianie w dalszej części kodu co wymusza na programiście większą kontrolę tego co dzieje się z tą zmienną i czasami trzeba stosować funkcje, które sprawdzają typ przekazanych danych. Nie możemy też w żaden sposób wymusić przekazania do metody danych określonego typu lub określić jaki typ danych zostanie zwrócony. Zaletą dynamicznego typowania jest większa elastyczność języka i możliwość zmiany typu w locie co eliminuje konieczność jawnego deklarowania nowych zmiennych do przechowywania danych pod postacią innego typu (rzutowanie jawne i niejawne). 
+Takie rozwiązanie ma zarówno wady jak i zalety. Do wad można zaliczyć to, że pierwotny typ zmiennej może ulec zmianie w dalszej części kodu co wymusza na programiście większą kontrolę tego co dzieje się z tą zmienną i czasami trzeba stosować funkcje, które sprawdzają typ przekazanych danych, jeżeli oczekujemy konkretnego typu. Nie możemy też w żaden sposób wymusić przekazania do metody danych określonego typu lub określić jaki typ danych zostanie zwrócony. Możemy jednak określić typ oczekiwany na etapie pisania kodu począwszy od wersji Pythona 3.5 a cały mechanizm nazywa się **type hinting** (zobacz: https://docs.python.org/3.8/library/typing.html). W późniejszym etapie zajęć zostaną zaprezentowane przykłady jego użycia. 
+Zaletą dynamicznego typowania jest większa elastyczność języka i możliwość zmiany typu 'w locie' co eliminuje konieczność jawnego deklarowania nowych zmiennych do przechowywania danych pod postacią innego typu (rzutowanie jawne i niejawne). 
 
 Kolejna istotna informacja jest taka, że Python jest językiem zorientowanym obiektowo i wszystko w Pythonie jest obiektem* o czym świadczy chociażby to, że właściwie wszystkie zmienne posiadają metody, które można na nich wykonać.
 
@@ -38,7 +39,7 @@ suma = 10
 suma += 1 
 # to samo co
 suma = suma + 1
-# podobnie możemy uzywać operatorów -, *, /, //, **, % i operatorów bitowych (zachęcam do poczytania w dokumentacji)
+# podobnie możemy używać operatorów -, *, /, //, **, % i operatorów bitowych (zachęcam do poczytania w dokumentacji)
 
 
 # modulo czyli reszta z dzielenia
@@ -141,6 +142,7 @@ Powyższy fragment to tylko przykład różnych metod deklaracji, w trakcie zaj�
 
 Ciąg tekstowy w Pythonie to tablica znaków co daje z miejsca wiele możliwości manipulacji i dostępu do składowych tego ciągu. Inna ważna cecha stringów to fakt, że po ich zadeklarowaniu nie możemy zmienić zadeklarowanych znaków ciągu, gdyż zmienne typu string są niemutowalne (ang. immutable). Oczywiście możemy nadpisać zmienną nową wartością czyli zmienić wartość przez przypisanie.
  
+
 **Listing 4**
 ```python
 imie = 'Krzysztof'
@@ -271,7 +273,8 @@ Po więcej przykładów związanych z formatowaniem łańcuchów można udać si
 
 1.	Pobierz ze strony https://pl.lipsum.com/ tekst akapitu o tytule „Czym jest Lorem Ipsum” i przypisz go do zmiennej.
 
-2.	Wyświetl na konsoli tekst postaci „W tekście jest {liczba_liter1} liter {litera_1} oraz {liczba_liter2} liter {litera_2}” . W miejsca {liczba_liter1} oraz { liczba_liter2} podstaw zmienne, które będą przechowywały liczbę wystąpień danych liter (poszukaj odpowiedniej metody dla typu str). Litery, które mają być wyszukane powinny zostać przekazane jako indeks do 4 znaku nazwiska oraz 3 znaku imienia osoby wykonującej ćwiczenie, np. imie = „Krzysztof”, nazwisko = „Ropiak”, litera_1 = imie[2], litera_2 = nazwisko[3].
+2. Korzystając ze zmiennej z zadania 1 wyświetl na konsoli tekst postaci:
+„W tekście jest {liczba_liter1} liter {litera_1} oraz {liczba_liter2} liter {litera_2}” . W miejsca {liczba_liter1} oraz { liczba_liter2} podstaw zmienne, które będą przechowywały liczbę wystąpień danych liter (poszukaj odpowiedniej metody dla typu **str**). Litery, które mają być wyszukane powinny zostać to 4 litera nazwiska oraz 3 litera imienia osoby wykonującej ćwiczenie, np. imie = „Krzysztof”, nazwisko = „Ropiak”, litera_1 = imie[2], litera_2 = nazwisko[3].
 
 3.	Przejdź na stronę https://pyformat.info/ a następnie zapisz w oddzielnym pliku .py i wykonaj 5 wybranych przykładów formatowania ciągów oznaczonego jako „New”, których nie było w przykładach z tego podrozdziału (np. z wyrównaniem, ilością pozycji liczby, znakiem itp.).
 
