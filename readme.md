@@ -30,7 +30,9 @@ W trakcie zajęć poruszone zostaną zagadnienia z poniższej listy:
 
 ### **1.3 Warunki zaliczenia przedmiotu**
 
-Zaliczenie przedmiotu odbędzie się na podstawie oceny pracy studenta w trakcie zajęć oraz przydzielonych zadaniach do samodzielnego wykonania.
+Na zaliczenie przedmiotu składają się:
+* wykonanie niewielkiego projektu końcowego (wczytanie danych z pliku, przekształcenie danych, wyświetlenie wybranych danych)
+* ocena pracy studenta w trakcie zajęć oraz przydzielonych zadań do samodzielnego wykonania.
 
 >Procentowa skala ocen:  
 >* poniżej 51%. – ocena niedostateczna (2,0)
