@@ -24,7 +24,9 @@ Możemy również umieszczać listy w liście, co daje nam listy wielopoziomowe.
 
 ```python
 lista = []
-lista.append([1, 2, 3]).append(['a', 5, 'Python', 7.8])
+lista.append([1, 2, 3])
+lista.append(['a', 5, 'Python', 7.8])
+# efektem będzie dodanie list jako elementów listy (lista dwupoziomowa)
 
 print(lista)
 
@@ -51,7 +53,7 @@ print(lista6)
 # [1, 2, 3, 'a', 5, 'Python', 7.8]
 ```
 
-Obie metody różnią się od siebie tym, że pierwsza modyfikuje już istniejącą listę, a druga wymaga podstawienia połączonej listy pod zmienną gdyż sama arytmetyczna operacja „+” nie spowoduje zmiany pierwotnej listy.
+Obie metody różnią się od siebie tym, że pierwsza modyfikuje już istniejącą listę, a druga wymaga podstawienia połączonej listy pod zmienną gdyż sama arytmetyczna operacja „+” nie spowoduje zmiany pierwotnej listy a zawróci nową listę z elementami z obu list.
 
 Niektóre metody, które można wykonać na obiekcie listy wykonują się jako operacje **in-place** co oznacza, że operacja wykonywana jest bez zwracania nowej wartości  (co przy próbie przypisania wartości zwracanej przypisze zmienną **NoneType**) przez co nie można zmienionej tablicy przypisać do nowej zmiennej pozostawiając oryginał bez zmian. Poniżej przykład z sortowaniem.
 
@@ -119,7 +121,7 @@ Stwórz listę z wartościami od 1 do 10. Następnie podziel listę tak, aby pie
 Połącz te listy ponownie. Dodaj do listy wartość „0” na początku. Utwórz kopię połączonej listy i wyświetl listę posortowaną malejąco.
 
 **Zadanie 3**  
-Za pomocą rzutowania stringa na listę zapisz do listy swoje imię i nazwisko małymi literami jako podlisty (czyli otrzymamy listę dwupoziomową). Następnie zamień pierwsze litery imienia i nazwiska na wielkie litery. W ostatnim kroku korzystając z metody .join() dla klasy list scal obie listy ponownie w imię i nazwisko i wyświetl w odwróconej kolejności korzystając z mechanizmu cięcia (slice).
+Za pomocą rzutowania stringa na listę zapisz do listy swoje imię i nazwisko małymi literami jako podlisty (czyli otrzymamy listę dwupoziomową). Następnie zamień pierwsze litery imienia i nazwiska na wielkie litery. W ostatnim kroku korzystając z metody .join() dla klasy str scal obie listy ponownie w imię i nazwisko i wyświetl w odwróconej kolejności korzystając z mechanizmu cięcia (slice).
 
 **Zadanie 4**  
 Napisz skrypt, gdzie w jednej zmiennej zapiszesz dowolnie długie zdanie (co najmniej 5 wyrazów) a następnie podziel te zdanie na wyrazy tak by zostały zapisane w liście jako jej elementy.
