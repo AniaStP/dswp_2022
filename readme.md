@@ -6,11 +6,11 @@
 
 W trakcie zajęć prowadzący udostępnia skrypt z wprowadzeniem do danego tematu wraz z przykładami kodu oraz zadaniami do samodzielnego rozwiązania. Na kolejnych zajęciach odostępniane są również przykładowe rozwiązania do zadań z zajęć poprzednich.
 
-Na początku każdych zajęć prowadzący bazując na skrypcie omawia zagadnienia i uzupełnia je o dodatkowe informacje, które mogą nie być ujęte w formie pisemnej w skrypcie.
+Na początku każdych zajęć prowadzący, bazując na skrypcie omawia zagadnienia i uzupełnia je o dodatkowe informacje, które mogą nie być ujęte w formie pisemnej w skrypcie.
 
 ### **1.2 Środowisko pracy**
 
-W trakcie zajęć wykorzystywany będzie interpreter języka **Python w wersji 3.8.7**. Podstawowym narzędziem pracy będzie **Visual Studio Code (VSC) wraz z pluginem Python**. Cały proces instalacji oraz konfiguracji środowiska zostanie przedstawiony na pierwszych zajęciach wraz z pisemną dokumentacją najważniejszych jej elementów. Możliwe jest również przedstawienie podstawowej koncepcji wykorzystania narzędzia Git.
+W trakcie zajęć wykorzystywany będzie interpreter języka **Python w wersji 3.9.13** dostępny pod adresem https://www.python.org/downloads/release/python-3913/. Podstawowym narzędziem pracy będzie **PyCharm Community Edition**, ale zaprezentowane zostanie również narzędzie **Visual Studio Code (VSC) wraz z pluginem Python**. Cały proces instalacji oraz konfiguracji środowiska zostanie przedstawiony na pierwszych zajęciach wraz z pisemną dokumentacją najważniejszych jej elementów. Możliwe jest również przedstawienie podstawowej koncepcji wykorzystania narzędzia Git.
 
 W trakcie zajęć poruszone zostaną zagadnienia z poniższej listy:
 
