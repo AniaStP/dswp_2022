@@ -2,6 +2,12 @@
 
 ## **1. Podstawowe typy danych**
 
+Oficjalna dokumentacja Pythona opisująca podstawowe (wbudowane) typy danych:
+* https://docs.python.org/3.9/library/stdtypes.html
+
+Ciekawy i rozbudowany artykuł odnosnie typów wbudowanych:
+* https://realpython.com/python-data-types/
+
 Zanim przejdziemy do omawiania poszczególnych typów danych warto wiedzieć, że Python jest językiem „typowanym dynamicznie”. Oznacza to, że typ danych jaki zostanie wykorzystany do przechowania wartości przypisanej do zmiennej jest ustalony w momencie jej przypisania (operator '=') co znacznie różni się od sposobu w jaki typy są przypisywane do zmiennych w językach takich jak Java czy C++, gdzie w kodzie źródłowym określamy jaki typ danych (typ obiektu) będzie owa zmienna przechowywała.
 
 Takie rozwiązanie ma zarówno wady jak i zalety. Do wad można zaliczyć to, że pierwotny typ zmiennej może ulec zmianie w dalszej części kodu co wymusza na programiście większą kontrolę tego co dzieje się z tą zmienną i czasami trzeba stosować funkcje, które sprawdzają typ przekazanych danych, jeżeli oczekujemy konkretnego typu. Nie możemy też w żaden sposób wymusić przekazania do metody danych określonego typu lub określić jaki typ danych zostanie zwrócony. Możemy jednak określić typ oczekiwany na etapie pisania kodu począwszy od wersji Pythona 3.5 a cały mechanizm nazywa się **type hinting** (zobacz: https://docs.python.org/3.9/library/typing.html). W późniejszym etapie zajęć zostaną zaprezentowane przykłady jego użycia. 
