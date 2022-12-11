@@ -93,7 +93,7 @@ Na zajęciach na podstawie dokumentacji ze strony https://virtualenv.pypa.io/en/
 
 ## **8. Obsługa plików.**
 
-> Dokumentacja : https://docs.python.org/3.8/tutorial/inputoutput.html#reading-and-writing-files
+> Dokumentacja : https://docs.python.org/3.9/tutorial/inputoutput.html#reading-and-writing-files
 
 Przejdźmy od razu do omówienia kilku przykładów.
 
@@ -120,7 +120,7 @@ I tutaj możemy zauważyć pierwszy problem, jeżeli w pliku tekstowym znajdowa�
 uchwyt = open(r'C:\plik.txt', 'r', , encoding='utf-8'))
 ```
 
-Typy i nazwy kodowania można znaleźć pod adresem https://docs.python.org/3.7/library/codecs.html#standard-encodings.
+Typy i nazwy kodowania można znaleźć pod adresem https://docs.python.org/3.9/library/codecs.html#standard-encodings.
 Tryby otwarcia pliku przedstawione są w tabelce poniżej.
 
 | Tryb | Opis |
@@ -187,7 +187,7 @@ except OSError:
     print('Wystąpił wyjątek OSError')
 ```
 
-Więcej informacji o wyjątkach, również związanych z obsługą plików znajdziemy pod adresem https://docs.python.org/3.8/library/exceptions.html#exception-hierarchy.
+Więcej informacji o wyjątkach, również związanych z obsługą plików znajdziemy pod adresem https://docs.python.org/3.9/library/exceptions.html#exception-hierarchy.
 
 
 ### **Moduł `json` oraz `csv`**
@@ -243,7 +243,7 @@ print(json.dumps(p.__dict__))
 
 Format `csv` jest również bardzo popularny i mimo, że można go bez większych problemów obsługiwać za pomocą wbudowanych metod operujących na plikach oraz dzięki metodom `split()` oraz `join()` klasy `str` w dość efektywnie tworzyć i odtwarzać takie pliki mamy do dyspozycji moduł `csv`.
 
-> Dokumentacja: https://docs.python.org/3.8/library/csv.html
+> Dokumentacja: https://docs.python.org/3.9/library/csv.html
 
 **Przykład 2**
 ```python
